@@ -1,0 +1,27 @@
+# ~/config.toml
+[auth]
+private_key    = ""
+proxy_address  = ""
+api_key        = ""
+api_secret     = ""
+api_passphrase = ""
+endpoint       = "https://clob.polymarket.com"
+
+[network]
+gamma_url = "https://gamma-api.polymarket.com"
+timeout_seconds = 10
+
+[markets]
+default_filter = "all"
+
+[risk]
+max_exposure_usd = 10000
+per_market_cap_usd = 2000
+daily_loss_limit_usd = 500
+
+[strategies]
+enabled = ["prob-edge", "imbalance", "liquidity"]
+
+[ui]
+theme = "textual-dark"
+refresh_seconds = 5
